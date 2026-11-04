@@ -303,7 +303,7 @@ input[type=file]{display:none}
       <label class="f">Geogrid output directory<span class="pinput"><input id="pGeogrid" placeholder="/path/to/the/geogrid-output-directory"><button type="button" class="browsebtn" data-browse="dir" data-target="pGeogrid" title="Pick the geoGRID output directory from this computer">Browse</button></span></label>
       <label class="f">Ungrib FILE prefix<span class="pinput"><input id="pUngrib" placeholder="/path/to/the/ungrib-FILE-prefix/FILE"><button type="button" class="browsebtn" data-browse="file" data-target="pUngrib" title="Pick a file to build the unGRIB FILE prefix from this computer">Browse</button></span></label>
       <label class="f">Metgrid output directory<span class="pinput"><input id="pMetgrid" placeholder="/path/to/the/metgrid-output-directory"><button type="button" class="browsebtn" data-browse="dir" data-target="pMetgrid" title="Pick the metGRID output directory from this computer">Browse</button></span></label>
-      <label class="f">Run / case folder name<span class="pinput"><input id="pRunName" placeholder="e.g. Sudan_2019 — replaces &lt;domainname&gt;"></span></label>
+      <label class="f">Run / case folder name<span class="pinput"><input id="pRunName" placeholder="e.g. Ethiopiadomain — replaces &lt;domainname&gt;"></span></label>
       <label class="f">Run-folder base directory<span class="pinput"><input id="pWpsBase" placeholder="e.g. /home/user/Build_WRF"></span></label>
     </div>
     <div class="btnrow" style="margin-top:8px">
@@ -698,7 +698,7 @@ const MASTER_PRESETS = [
   ["WRF-Chem + WRF-Hydro",        [true,  false, true ]],
   ["WRF-Chem + WRF-Fire + WRF-Hydro", [true, true, true]]];
 
-const HOME = "~";   // browser has no $HOME; tilde paths are kept verbatim
+const HOME = "/home/user";   // browser has no $HOME; tilde paths are kept verbatim
 
 const State = {
   proj: "Lambert Conformal",
